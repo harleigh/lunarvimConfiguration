@@ -32,6 +32,11 @@ vim.opt.relativenumber = true
 lvim.format_on_save = true
 
 
+--Saving a file with Control-s
+lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+--Shift through my "tabs" (which are buffers); granted leader b then b or n will acheive this as well
+lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
+lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 
 
 -- local linters = require "lvim.lsp.null-ls.linters"
@@ -49,7 +54,7 @@ lvim.format_on_save = true
 -- }
 
 
-
+--I installed perttier through Mason
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
   {

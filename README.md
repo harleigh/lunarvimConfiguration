@@ -4,7 +4,9 @@ bits regarding LunarVim and my cobbled together customizations; all of this jazz
 
 Windows:
 * Resizing Windows: In normal mode hold ctrl and hit arrow keys left/right
-* 
+
+Tabs:
+* Shift h and l (<S-h>, <S-l>) lets us toggle between buffer (tabs)
 
 Terminals:
 * Alt 1, 2, 3 for various types of terminals (horizontal, vertical, float)
