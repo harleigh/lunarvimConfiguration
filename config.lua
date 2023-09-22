@@ -39,6 +39,16 @@ lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 
 
+lvim.plugins = {
+  { --gives us autocompletion with tags; useful for jsx (react and html)
+    "windwp/nvim-ts-autotag",
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end,
+  },
+
+} --end plugins
+
 -- local linters = require "lvim.lsp.null-ls.linters"
 -- linters.setup {
 -- { command = "eslint",
