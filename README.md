@@ -1,5 +1,5 @@
 # lunarvimConfiguration
-bits regarding LunarVim and my cobbled together customizations; all of this jazz is playing in windows 10.
+bits regarding LunarVim and my cobbled together customizations, as well as generic vanilla vim; all of this jazz is playing in windows 10.
 
 
 Windows:
@@ -20,3 +20,8 @@ that is required is a call on the terminal 'glow'. So, all of the markdown can b
 
 React JSX:
 * nvim-ts-autotag is a must; beautiful autocompletion of tags just like in vscode.
+
+Searching (and replacing):
+* The lot in the current file (which is '%') :%s/{search}/{replace}/g
+* To get confirmation on each search and replace: %s/{search}/{replace}/gc
+* great resource: https://vim.fandom.com/wiki/Search_and_replace
