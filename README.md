@@ -24,9 +24,12 @@ that is required is a call on the terminal 'glow'. So, all of the markdown can b
 ## Searching (and replacing):
 * The lot in the current file (which is '%') :%s/{search}/{replace}/g
 * To get confirmation on each search and replace: %s/{search}/{replace}/gc
-* Stop highlighting your last search (but allow highlighting in the future), we enter ":noh",
- or have a binding of [noremap <silent> <c-_> :let @/ = ""<CR>]  (brackets to group), or [nnoremap / :let @/=""<CR>/] which
-will clear the highlight by hitting '/' agian
+* Stop highlighting your last search (but allow highlighting in the future),
+  * we enter ":noh"
+  * or have a binding of [noremap <silent> <c-_> :let @/ = ""<CR>]  (brackets to group),
+  * or [nnoremap / :let @/=""<CR>/] which will clear the highlight by hitting '/' agian,
+  * or have <Ctrl-l> refresh the screen and remove highlighting: [nnoremap <silent> <C-l> :nohl<CR><C-l>]
+  * or a double escape to clear search highlights: [nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>]
 * great resource: https://vim.fandom.com/wiki/Search_and_replace
 
 
